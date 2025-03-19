@@ -12,7 +12,7 @@ import java.util.Map;
 public class MemoryMemberRepository implements MemberRepository {
 
     private final static Map<Long, Member> store = new HashMap<>();
-    // 동시성 이슈 막기에는 ConcurrentHashMap이 좋음.
+    // 동시성 이슈 막기에는 'ConcurrentHashMap' 이 좋음.
 //    private static Map<Long, Member> store = new ConcurrentHashMap<>();
 
     @Override
